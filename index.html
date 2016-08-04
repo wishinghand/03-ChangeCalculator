@@ -7,6 +7,78 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <form class="pure-form" action="javascript:void(0)">
+        <fieldset>
+            <legend>Change Calculator</legend>
+
+            <div class="pure-g">
+                <div class="pure-u-1-5"></div>
+                <div class="pure-u-1-5">
+                    <label for="first-name">Amount Due</label>
+                </div>
+                <div class="pure-u-1-5"></div>
+                <div class="pure-u-1-5">
+                    <label for="last-name">Amount Given</label>
+                </div>
+
+            </div>
+
+            <div class="pure-g">
+                <div class="pure-u-1-5"></div>
+                <div class="pure-u-1-5">
+                    <input id="due" class="pure-u-4-5" type="text">
+                </div>
+                <div class="pure-u-1-5"></div>
+                <div class="pure-u-1-5">
+                    <input id="given" class="pure-u-4-5" type="text">
+                </div>
+            </div>
+
+            <div class="pure-g">
+                <div class="pure-u-2-5"></div>
+                <div class="pure-u-1-5">
+                    <button id="calculate" class="pure-button ">Calculate</button>
+                </div>
+            </div>
+
+        </fieldset>
+    </form>
+
+
+        <div class="pure-g">
+            <div class="pure-u-3-5 changeBtn" id="dollars">
+                Dollars: 
+            </div>
+        </div>
+
+       <div class="pure-g">
+            <div class="pure-u-3-5 changeBtn" id="quarters">
+               Quarters: 
+           </div>
+       </div>
+
+       <div class="pure-g">
+            <div class="pure-u-3-5 changeBtn" id="dimes">
+               Dimes: 
+           </div>
+       </div>
+
+        <div class="pure-g">
+            <div class="pure-u-3-5 changeBtn" id="nickels">
+                Nickels: 
+            </div>
+        </div>
+
+        <div class="pure-g">
+            <div class="pure-u-3-5 changeBtn" id="pennies">
+                Pennies: 
+            </div>
+            <div class="pure-u-1-5" id="display"></div>
+        </div>
+
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

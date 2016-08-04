@@ -1,0 +1,11 @@
+body{
+    background-image: url('gplaypattern/gplaypattern.png');
+}
+
+.changeBtn{
+    padding: 1%;
+    background-color: rgba(233, 194, 3, .6);
+    margin: 1%;
+    width:  250px;
+    border-radius: 5px;
+}
