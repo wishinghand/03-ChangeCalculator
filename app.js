@@ -1,5 +1,6 @@
 $('#calculate').click(function(){
     //output blocks
+    var total = $('#total');
     var dollars = $('#dollars');
     var quarters = $('#quarters');
     var dimes = $('#dimes');
@@ -27,6 +28,7 @@ $('#calculate').click(function(){
         return;
     }
 
+    total.append(change);
     var dollarChange = Math.floor(change);
     dollars.append(dollarChange);
 
@@ -45,3 +47,13 @@ $('#calculate').click(function(){
     newChange %= 1;
 
 });
+
+// var dollarChange = Math.floor(change);
+    // dollars.append(dollarChange);
+
+    // var dollarChange = (change - dollarChange).toFixed(2);
+
+    // var quarterChange = Math.floor(dollarChange / .25);
+    // quarters.append(quarterChange);
+
+    // var dimeChange = Math.floor(quarterChange)
