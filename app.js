@@ -36,6 +36,7 @@ $('#calculate').click(function(){
 
     quarters.append(Math.floor(newChange / 25));
     newChange %= 25;
+    // newChange = newChange % 25;
 
     dimes.append(Math.floor(newChange / 10));
     newChange %= 10;
