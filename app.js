@@ -13,6 +13,9 @@ $('#calculate').click(function(){
     var due = parseFloat($('#due').val()).toFixed(2);
     var given = parseFloat($('#given').val()).toFixed(2);
 
+    //clear inputs
+    $('#changeForm')[0].reset();
+
     //round off weird javascript floating point error
     var change = (given - due).toFixed(2);
 
